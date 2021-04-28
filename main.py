@@ -45,5 +45,12 @@ print(fruits)
 #===python list methods=====
 # print(dir(list))
 # print(help(list.index))
+# print(help(list.append))
+
+fruits = ['oranges', 'apples', 'pear', 'apple', 'banana']
+fruits.append('pineapple')
+fruits.insert(2, 'Guava' )
+#insert in the position of the index 
+print(fruits)
 
 
