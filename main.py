@@ -47,10 +47,35 @@ print(fruits)
 # print(help(list.index))
 # print(help(list.append))
 
-fruits = ['oranges', 'apples', 'pear', 'apple', 'banana']
+fruits = ['oranges', 'apples', 'pear','apples', 'apples', 'banana']
 fruits.append('pineapple')
 fruits.insert(2, 'Guava' )
-#insert in the position of the index 
+fruits.insert(3, 'mango')
+#insert in the position before the index 
+# fruits.clear()
+#clears the list.
+
+fruits.pop(1)
+fruits.pop(-1)
+#removes what is Index number . - 1 removes end of the list
+
+
 print(fruits)
+
+print(fruits.index('mango'))
+#gives index of listed item
+
+print(fruits.count('apple'))
+
+
+#combining data structures
+fruitiy = ['oranges', 'apples', 'pear','apples', 'apples', 'banana']
+result = {}
+for x in fruitiy:
+ result[x] = fruitiy.count(x)
+
+print(result) 
+print('orange' in fruitiy)
+print('apples' not in fruitiy)
 
 
